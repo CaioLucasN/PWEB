@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pedra, Papel e Tesoura</title>
+    <script>
+        
+        alert("JanJanKen!")
+        var computador = Math.round(Math.random() * 2)
+        var jogador = prompt("Mostre a ele do que é capaz! \nDigite 1 para Pedra!\nDigite 2 para Papel!\nDigite 3 para Tesoura!")
+        
+        if (computador == 0){
+                if (jogador == 1){
+                   alert("Jogador: Pedra\nComputador: Pedra!\n\nEmpate") 
+                }
+                else if(jogador == 2){
+                    alert("Jogador: Papel\nComputador: Pedra!\n\nVitória!")
+                }
+                else if(jogador == 3){
+                    alert("Jogador: Tesoura\nComputador: Pedra!\n\nDerrota!")
+                }
+        }
+                
+            else if (computador == 1){
+                if (jogador == 1){
+                   alert("Jogador: Pedra\nComputador: Papel!\n\nDerrota") 
+                }
+                else if(jogador == 2){
+                    alert("Jogador: Papel\nComputador: Papel!\n\nEmpate!")
+                }
+                else if(jogador == 3){
+                    alert("Jogador: Tesoura\nComputador: Papel!\n\nVitória!")
+                }
+                
+                
+            }
+            else if (computador == 2){
+                if (jogador == 1){
+                   alert("Jogador: Pedra\nComputador: Tesoura!\n\nVitória") 
+                }
+                else if(jogador == 2){
+                    alert("Jogador: Papel\nComputador: Tesoura!\n\nDerrota!")
+                }
+                else if(jogador == 3){
+                    alert("Jogador: Tesoura\nComputador: Tesoura!\n\nEmpate!")
+                }
+            }
+         
+        
+            
+        
+        
+        
+
+        
+    </script>
