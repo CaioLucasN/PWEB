@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback do Cineminha</title>
+  </head>
+  <body>
+    <script>
+    var nota = new Array()
+    var pesquisaIdade = new Array()
+    var pesquisaSexo = new Array()
+    var aux = 0
+    var mediaIdade
+    var maisVelha = 0
+    var maisNova = 100
+    var qtdPessimo
+    var qtdBom
+    var porcentBom
+    var porcentPessimo
+    var numHomem
+    var numMulher
+    var i
+
+    for (i=0;i<5;i++){
+
+      pesquisaIdade[i] = prompt("Bem vindo ao Feedback do Cineminha\nPor favor, informe sua idade")
+      pesquisaSexo[i] = prompt("Insira seu sexo:\nUtilizando:\nM para Masculino\nF para Feminino")
+      nota[i] = prompt("Insira sua nota de avaliação do filme\nUtilizando:\nÓtimo=4\nBom=3\nRegular=2\nPéssimo=1")
+
+      aux += parseInt(pesquisaIdade[i])
+
+      if (pesquisaIdade[i] < maisaNova) {
+          maisNova = pesquisaIdade[i];
+        }
+        if(pesquisaIdade[i] > maisVelha) {
+            maisVelha = pesquisaIdade[i];
+        }
+        aux += pesquisaIdade[i];
+        if(pesquisaSexo == M){
+            numHomem += 1;
+        }
+          else{
+            numMulher += 1;
+        }
+        if(nota[i]==1){
+          qtdPessimo =+ 1
+        }
+        if(nota[i]==4 || nota[i]==3){
+          qtdBom =+ 1
+      }
+
+
+    }
+
+    mediaIdade = aux / (pesquisaIdade.length)
+
+    porcentBom = qtdBom.parseInt / (nota.length) * 100
+
+    alert("Media de idade dos participantes da pesquisa: " + mediaIdade + "\nIdade da Pessoa mais velha: " + maisVelha + "\nIdade da pessoa mais nova: "
+    + "\nQuantidade de Notas péssimo" + qtdPessimo + "\nPorcentagem de Notas ótimas e boas: " + porcentBom + "Numero de Homens participantes: "
+    + numHomem + "Numero de Mulheres participantes" + numMulher)
+
+    </script>
+    </body>
